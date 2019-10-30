@@ -1,0 +1,83 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Django REST&&API</title>
+    <!-- bootstrap CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Serif+KR&display=swap" rel="stylesheet">
+    <style>
+    
+        * {font-family: 'Noto Serif KR', serif;}
+
+        header {
+            width: 100%;
+            height: 10%;
+        }
+
+        .header_full_title {
+            font-family: 'Black Han Sans', serif; !important }
+
+        main {
+            width: 100%;
+            height: 70%;
+        }
+        
+        footer {
+            width: 100%;
+            height: 20%;
+            bottom: 0;
+            position: fixed;
+        }
+
+        .footer_left {
+            display: flex-start;
+            width: 50%;
+        }
+
+        .footer_right {
+            display: flex;
+            width: 50%;
+            }
+        
+        .footer_right_likelion_bi {
+            width: 100%;
+        }
+
+    </style>
+
+</head>
+
+<body>
+<header>
+    <div class="container">
+        <span class="header_full_title">한남동 호머피자 가는길</span>
+    </div>
+</header>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+<footer>
+    <div class="container">
+        <div class="footer_left">
+            <p>멋쟁이사자처럼 2학기 과제</p>
+            <p>만든사람: <strong>덕성멋사 7기이은정</strong></p>
+        </div>
+        <div class="footer_right">
+            <!--likelion logo-->
+            <img class="footer_right_likelion_bi" alt="likelion_bi" src="{% static "img/about_likelion_wordmark_E_C.png" %}">
+        </div>
+    </div>
+</footer>
+
+</body>
+
+</html>
