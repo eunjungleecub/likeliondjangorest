@@ -1,9 +1,9 @@
-# 덕성멋사 7기 - 2학기 과제
+# 멋쟁이사자처럼 7기 - 2학기 Django API 과제
 
-### pip packages
+### 1. pip packages
 1. django
 2. djangorestframework
 3. pillow
 
-### 기억할것
+### 2. 특별히 기억할것
 1. parserclass
